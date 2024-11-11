@@ -1,6 +1,7 @@
-campoIdade;
+let campoIdade;
 let campoFantasia;
 let campoAventura;
+
 
 function setup() {
   createCanvas(800, 400);
@@ -16,7 +17,7 @@ function draw() {
   let idade = campoIdade.value();
   let gostaDeFantasia = campoFantasia.checked();
   let gostaDeAventura = campoAventura.checked();
-  let recomendacao = geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura);
+  let recomendacao =  geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura);
 
   fill(color(76, 0, 115));
   textAlign(CENTER, CENTER);
